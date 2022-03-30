@@ -1,0 +1,1279 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Support and Service | DST Tech Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We create solutions for all sectors · Cyber security · Public facing-Digital Services · High Priority Systems · Cross-Government Collaboration and Scalable Services">
+    <meta name="author" content="Eduardo-Fajardo-Marcial" >
+	<meta name="Robots" content="all" />
+    <meta name="keywords" content="software consulting,computer network services,computer security services,it staffing,software design,cloud-base services,computer password retrieval,remote access computer support,managed it services,computer support and service,computer security,business software, interprise software,business computer services, business computer support, wifi for business,business wifi optimize,business computer services,computer services,computer support and services,it help desk, help desk, computer support, IT help desk, wifi, network service, managed services, IT Services, it services, help desk, computer help, computer security, Computer Help, virus, computer virus, network sercurity, network firwall, network upgrade, wifi cloud security, cloud security, IT call center, 24/7 IT Help, 24/7 computer help, 24/7 IT Service, ">
+    <!--link to favicon icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--link to static css-->
+    <link rel="stylesheet" href="{% static 'app/css/index.css' %}">
+    <!-- Link to bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Link to Bulma IO css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
+    <!-- Links to font awesome -->
+    <script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
+
+    <!--link to W3 Schools css for animated text-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--Google Map index.js-->
+    <script src="index.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYL7PFZ4V5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYL7PFZ4V5');
+</script>
+
+
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light  is-size-4-desktop is-size-4-tablet is-size-4-mobile " style="font-family: 'League Gothic';">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'app/css/images/subfolder/main_logo.png' %}" class="logo"  width="375px" height="80px" alt="computer services">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-4 active">
+              <a class="nav-link" href="#about" style="color: #171b69;">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="{% url 'contact' %}" style="color: #171b69;">Contact</a>
+            </li>
+            <li class="nav-item px-4">
+                <a class="nav-link " href="{% url 'career' %}" style="color: #171b69;">Careers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #171b69;"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#wifiservice">Optimized WiFi</a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#comm-service">
+                        Unified Communications
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#network-service">
+                        Network Solutions
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#cloud-service">
+                        Cloud / Virtualization
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#security-service">
+                        Security Service
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#business-service">
+                        Business Continuity
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#consult-service">
+                        IT Consulting
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#helpdesk-service">
+                        Help Desk Support
+                    </a>
+                    <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="#managed-service">
+                        Managed Service
+                    </a>
+                </div>
+                
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+<!--==Home Page ===================================-->
+<!--============================================-->
+      <section class="hero  bg " >
+          <div class="hero-head">
+            
+          </div>
+        <div class="hero-body">
+            <div class="w3-container w3-animate-left" style="margin-top: 3%;">
+                <h1 class="title has-text-left is-size-1-desktop is-size-1-tablet is-size-2-mobile" style="color:#0e1142;font-family: 'Roboto Condensed', sans-serif;text-shadow: 1px 1px 1px rgb(36, 36, 36);">IT and Cyber Solutions for Public & Private Sectors</h1>
+                 
+            </div>
+            <div class="w3-container w3-animate-right" style="margin-top: 2%;">
+                <p class="subtitle has-text-left has-text-grey-darker is-size-4-desktop is-size-5-tablet is-size-5-mobile" style="font-family: 'Poppins';text-shadow:1px 1px 1px #f8f5f2; ">DST Tech Solutions is a consulting firm that prides itself on
+                    results that enable the mission.<br> Our services are built upon
+                    sound strategy that are managed efficiently in partnership
+                    with our customers.</p>
+            </div> 
+            <div class="container-fluid">
+            <div class="container-fluid"  style="margin-top: 8%;">
+                <div class="w3-container w3-animate-bottom">
+                    <div class="columns ">
+                        <div class="column ">
+                            <div class="columns is-desktop is-mobile  has-text-centered">
+
+                                <div class="column is-half custom-column">
+                                    <div class="left-column">
+                                        <a href="#wifiservice" onclick="wifiFunction()">
+                                            <i class="fa-solid fa-wifi fa-3x" style="color:#0e1142;"></i>
+                                        <h5 class="subtitle has-text-warning is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Optimized WiFi </h5>
+                                            
+                                    </a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="column is-half  custom-column">
+                                    <div class="left-column">
+                                        <a href="#security-service" onclick="securityFuncition()">
+                                            <i class="fa-solid fa-user-secret fa-3x" style="color:#0e1142;"></i>
+                                            <h5 class="subitle has-text-warning is-size-6-mobile" style="font-family:'Roboto Condensed', sans-serif">Cybersecurity</h5>
+                                                
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="column ">
+                            <div class="columns  is-mobile  has-text-centered">
+                                <div class="column is-half custom-column">
+                                    <a href="#consult-service" onclick="consultFunction()">
+                                            <i class="fa-solid fa-microchip fa-3x" style="color: #0e1142;"></i>
+                                        <h5 class="subtitle has-text-warning is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Information Technology</h5>
+                                            
+                                    </a>
+                                </div>
+                                <div class="column is-half custom-column">
+                                    <a href="#network-service" onclick="networkFunction()">
+                                            <i class="fa-solid fa-network-wired fa-3x" style="color: #0e1142;"></i>
+                                            <h5 class="subtitle has-text-warning is-size-6-mobile" style="font-family:'Roboto Condensed', sans-serif;">Networking</h5>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section> 
+<!--About Section--------------------------------->
+<!--============================================-->     
+<section id="about" class="hero" style="background-color: #f8f5f2;"><!--About section-->
+    <div class="hero-body">
+        <div class="container">
+        <div class="columns is-mobile is-centered">
+            <div class="column has-text-centered is-half">
+                <h5 class="title is-size-3-desktop is-size-3-tablet is-size-5-mobile" style="font-family:'Poppins';color: rgb(255, 196, 0);">ABOUT US</h5>
+            </div>
+        </div>
+        <!--Start Slider----------------------------------------------------------->
+        <div class="columns is-mobile is-centered">
+            <div class="column">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-mobile" data-ride="carousel" style="height: 175px;">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1" style="color: yellow;"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="columns  is-mobile is-centered">
+                            <div class="column  is-full has-text-left">
+                                <h5 class="title is-narrow is-size-3-desktop is-size-4-tablet is-size-4-mobile" style="font-family: 'Playfair Display', serif;margin-left: 3%;">DST Tech Solution LLC is a Technology service and solutions IT consulting, a leader in business and
+                                    technology Optimization. We empower businesses, governments, and communities to solve their
+                                    toughest challenges.</h5>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="columns is-mobile is-centered">
+                            <div class="column is-full has-text-left">
+                                <h5 class="title is-narrow is-size-3-desktop is-size-4-tablet is-size-5-mobile" style="font-family: 'Playfair Display', serif;margin-left: 3%;">DST Tech Solution LLC empowers the leading innovative transformations. Market shifts and technology
+                                    trends demand fresh thinking. We help clients capitalize on trends and anticipate what’s ahead. Industry
+                                    analysts recognize DST Tech Solution LLC as a leader across our portfolio.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span  aria-hidden="true" >
+                        <i class="fa-solid fa-angle-left fa-3x" ></i>
+                        </span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span aria-hidden="true">
+                        <i class="fa-solid fa-angle-right fa-3x"></i>
+                      </span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <!--End Slider-------------------------------------------------------------->   
+        </div>
+    </div>
+</section><!--End about section-->
+
+<section class="hero " style="background-color: #f8f5f2;">
+    <div class="hero-body">
+        <div class="container">
+            <!--Context - Content -->
+
+            <div class="columns is-centered is-desktop is-tablet " >
+                <div class="column ">
+                    <div id="mission-header" class="w3-container w3-animate-left">
+                        <h3 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile" 
+                        style="font-family: 'Playfair Display', serif; color:rgb(0, 0, 104);">Our Mission</h3>
+                        <hr class="custom-hr" style="width: 50%;height:5px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
+                    </div>
+                    <div class="content">
+                        <ul class="subtitle is-size-5-desktop is-size-5-tablet is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                            <li>
+                                <strong>Engage-</strong> 
+                                We listen to your business needs and create customized solutions for them.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Enable-</strong> 
+                                Our experienced technicians manage your technology deployments to ensure they meet all your criteria.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Enhance-</strong> 
+                                We continually adapt your solutions to overcome future challenges.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Empower-</strong> 
+                                Our solutions increase your sales, improve your customers' experience, and maximize profits.
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Evole-</strong> 
+                                We give expert IT recommendations that will help you business grow.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="column text-center">
+                    <div class="container">
+                        <div class="mission-img">
+                            <div class="center">
+                                <p class="title is-size-1-desktop is-size-1-mobile is-size-1-mobile has-text-left has-text-white" style="font-family: 'Montserrat', sans-serif;font-weight: 600; font-style: italic;">"</p>
+                                <div class="mission-statement">
+                                    <span class="subtitle is-size-4-desktop is-size-4-tablet is-size-5-mobile has-text-center has-text-white" style="font-family: 'Montserrat'sans-serif; font-weight: 600;font-style: italic; "> 
+                                        During rapidly changing business conditions, legacy systems can be 
+                                        inflexible and impact the ability of the business to evolve quickly. 
+                                        The future of work is enabled, engaded, and everywhere.
+                                    </span>
+                                </div>
+                                
+                                <p class="title is-size-1-desktop is-size-1-mobile is-size-1-mobile has-text-right has-text-white" style="font-family: 'Montserrat', san-serif;font-weight: 600;font-style: italic;">"</p>
+                            </div>
+                        
+                        
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="columns is-centered is-mobile">
+                <div class="column has-text-centered">
+                        <h5 class="title is-size-3-desktop is-size-4-tablet is-size-4-mobile" style="font-family: 'Poppins';">READY TO DISCOVER THE SOLUTIONS THAT FIT YOUR IT BUSINESS NOW?</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Service Section------------------------------------------------------------------------------>
+<!--===========================================================================================-->
+<section id="services" class="hero is-fullheight "><!--service-parallax-->
+    <div class="hero-body"><!--Start hero-body-->
+        <div class="container-fluid " ><!--container fluid-->
+            <div class="columns is-desktop is-mobile is-tablet " ><!-- Header row -->
+                <div class="column ">
+                    <div id="serviceTitle">
+                        
+                        <h1 class="title  is-size-1-desktop is-size-2-tablet is-size-3-mobile "
+                            style="font-family:'Playfair Display', serif;color: rgb(0, 0, 104);">Our Services</h1>
+                            <hr class="custom-hr" style="width: 22%;height:5px;margin-top: -1% ;border-width:0;color:yellow;background-color:yellow">
+                        <h1 class="title  is-size-2-desktop is-size-3-tablet is-size-3-mobile" style="font-family: 'Poppins';">Be More Productive, More Profitable, More Secure</h1>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--------First Service Row---------------------------->
+            <div class="columns" style="margin-bottom: 5%;">
+                <div class="column">
+                    <div class="columns is-desktop is-tablet">
+                        <div class="column text-center"style="margin-bottom: 1%;">
+                            <!--Main wifi section, hiddens when 'show more' button is pressed-->
+                            <div id="wifiservice" class="box has-shadow" style="display:block;">
+                                <a href="#wifi" onclick="wifiFunction()">
+                                    <i class="fa-solid fa-wifi" ></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';  ">Optimized WiFi</p>
+                                   
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile " style="font-family: 'Roboto Condensed', sans-serif;">Every business requires a robust and reliable network connection to deliver products and services to clients. Our Cognitive Cloud Managed WiFi automatically analyzes your network when it discovers an issue, identifies the root cause, and fixes it. 
+                                        Our cloud managed WiFi solution takes this responsibility away
+                                         from you with seamless hardware and software
+                                          updates that are delivered over the internet.</p>
+                                    <a class="button is-primary is-outlined is-rounded"href="#wifi" onclick="wifiFunction()" >
+                                            Show More
+                                    </a>
+                            </div>
+                            
+
+                            <!--Hidden box for wifi, shows up when 'show more button is pressed'-->
+                            <div id="wifi"  style="display: none;">
+                                <div class="box has-background-info-light has-shadow">
+                                    <a href="#wifiservice" onclick="wifiFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                <br>
+                                <p class="subtitle has-text-left is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">We understand that installing and managing a business-ready internet connection can be tedious and difficult, especially if your office has more than one wireless Access Point (AP).</p>
+                                <br>
+                                <p class="title is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Why choose DST's Congnitive Cloud Managed WiFi?</p>
+                                <div class="content has-text-white">
+                                    <ul class="subtitle has-text-left is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <li>
+                                            <strong>Sclable-</strong>
+                                            Add AP's and connect them to the same network as required; one AP can serve more then 10 users.
+                                        </li>
+                                        <li>
+                                            <strong>Comprehensive Management- </strong>
+                                            Our specialist design and install your network plan, and manages everything for you <strong>24/7/365</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Superior Performance- </strong>
+                                            Signal processing technology lets users enjoy a stron internet connection, complete with built-in 
+                                            security features to keep your network safe from cyber attacks.
+                                        </li>
+                                        <li>
+                                            <strong>Intelligent- </strong>
+                                            Our solution automatically analyzes your network when there's an issue and solves it. pronto
+                                        </li>
+                                        <li>
+                                            <strong>Customizable-</strong>
+                                            Our AP's provides public network access for guests and private network access for employees
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <script>
+                                function wifiFunction() {
+                                    var wifi_primary = document.getElementById('wifiservice');
+                                    var wifi = document.getElementById('wifi');
+
+                                
+                                    if (wifi.style.display === 'none'){
+                                        wifi.style.display = 'block';
+                                        wifi_primary.style.display = 'none';
+                                    }else{
+                                        wifi.style.display = 'none';
+                                        wifi_primary.style.display = 'block';
+                                    }
+
+                                }
+                            </script>
+                            
+                        </div>
+                        
+                        <div  class="column text-center" style="margin-bottom: 1%;">
+                            <div id="comm-service" class="box has-shadow" style="display: block;">
+                                <a href="#comm" onclick="commfunction()">
+                                    <i class="fa-solid fa-tower-cell "></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Unified Communications</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif; ">Communicating with employees and clients is difficult when you have multiple windows of emails, texts, calls, 
+                                        and customer details to keep track of. DST Tech Solution LLC's 
+                                        Unified Communications (UC) service combines all your business's 
+                                        communications, including customer management systems, telephony 
+                                        systems, instant messaging, email, and video conferencing into one 
+                                        intuitive platform.</p>
+                                    <a href="#comm" class="button is-primary is-outlined is-rounded" onclick="commfunction()">
+                                        Show More
+                                    </a>
+                            </div>
+                            <div id="comm" style="display: none;">
+                                <div class="box has-text-left has-shadow has-background-info-light">
+                                    <a href="#comm-service" onclick="commfunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle  is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">UC also offers plenty of useful features. All of these can be accessed with internet-enabled devices, 
+                                        allowing you and your employees to work from virtually any location.</p>
+                                    <div class="content">
+                                        <ul class="subtitle is-size-5-desktop is-size-6-mobile" style="font-family:'Roboto Condensed', sans-serif;">
+                                            <li>
+                                                <strong>Integrated voice mail</strong> 
+                                            </li>
+                                            <li>
+                                                <strong>Customer management system</strong>
+                                            </li>
+                                            <li>
+                                               <strong>Instant messaging</strong>  
+                                            </li>
+                                            <li>
+                                                <strong>SMS</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Email</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Fax</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Presance information</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Video conferencing</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Call routing</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Auto attendant</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function commfunction(){
+                                    var comm_primary = document.getElementById('comm-service');
+                                    var comm = document.getElementById('comm');
+                                    if (comm.style.display === 'none'){
+                                        comm.style.display = 'block';
+                                        comm_primary.style.display = 'none';
+                                    } else {
+                                        comm.style.display = 'none';
+                                        comm_primary.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                            
+                            
+                        </div>
+                        <div  class="column text-center" style="margin-bottom:1%; ">
+                            <div id="network-service" class="box has-shadow" style="display:block;">
+                                <a href="#network" onclick="networkFunction()">
+                                    <i class="fa-solid fa-network-wired"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Network Solutions</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Networks are the backbone of modern-day businesses, which means they require specialized care. When you subscribe to DST Tech Solution LLC we will design and implement a network that allows you to take advantage of the latest cloud-based tools.</p>
+                                    <a class="button is-primary is-rounded is-outlined" href="#network" onclick="networkFunction()">
+                                        Show More
+                                    </a>
+                            </div>
+                            <div id="network" style="display: none;" >
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#network-service" onclick="networkFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle  is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Our technicians monitor your networks 24/7 and defend it against every conceivable cyber attack. 
+                                        Our content filtering and bandwidth management techniques guarantee a lightning-fast network, always.</p>
+                                    <div class="content subitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <p class="title is-size-5-desktop is-size-6-mobile " style="font-family:'Roboto Condensed', sans-serif">When you sign up for our services, you get:</p>
+                                        <ul>
+                                            <li>
+                                                <strong>Network design, implementation, and support</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Routine network assessment</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Bandwidth and connectivity optimization</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Cloud intergration</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Firewalls, VPNs, and intrusion prevention systems</strong>
+                                            </li>
+                                            <li>
+                                                <strong>On-demand technical support</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function networkFunction() {
+                                    var network_service = document.getElementById('network-service');
+                                    var network = document.getElementById("network");
+                                    if (network.style.display === 'none'){
+                                        network.style.display = 'block';
+                                        network_service.style.display = 'none';
+                                    }else {
+                                        network.style.display = 'none';
+                                        network_service.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------Second Service Row -------------------------->
+            <div class="columns" style="margin-bottom:2%;">
+                <div class="column">
+                    <div class="columns is-2 is-desktop is-tablet">
+                        <div  class="column text-center" style="margin-bottom:2%; ">
+                            <div id="cloud-service" class="box has-shadow" style="display: block;">
+                                <a href="#cloud" onclick="cloudFunction()">
+                                    <i class="fa-solid fa-cloud"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins'; ">Cloud/ Virtualization</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Cloud computing gives you the ability to transfer servers, storage, apps, and data into secure, offsite cloud servers 
+                                        that can be accessed via the internet. This means you and your employees get access to enterprise-level resources and
+                                         collaborate on projects from anywhere, anytime. However, migrating to the cloud seamlessly is no small feat, and that's 
+                                         where DST Tech Solution LLC comes in.</p>
+                                    <a class="button is-primary is-rounded is-outlined" href="#cloud" onclick="cloudFunction()">
+                                        Show More
+                                    </a>
+                            </div>
+                            <div id="cloud" style="display: none;">
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#cloud-service" onclick="cloudFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        Our technicians will makes sure the migration process goes smoothly and your systems are properly maintained. 
+                                        With no additional IT staff needed and no initial capital investment required, you can now direct your cash to more 
+                                        important, business-growing prospects, and leave the little things to us
+                                    </p>
+                                    <div class="content subtitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <ul>
+                                            <li>
+                                                <strong>Leading-edge technology- </strong>
+                                                get the latest software features and patches automatically
+                                            </li>
+                                            <li>
+                                                <strong>Robust Security- </strong>
+                                                thanks to our powerfull intrusion prevention systems and best practices
+                                            </li>
+                                            <li>
+                                                <strong>Round-the-clock Support- </strong>
+                                                We have staff on call 24/7 to help you with any cloud-related issue.
+                                            </li>
+                                            <li>
+                                                <strong>Data Resiliency- </strong>
+                                                since your data is backed up and secured in our cloud servers.
+                                            </li>
+                                            <li>
+                                                <strong>More Space- </strong>
+                                                pool together your resources to free up server rooms. 
+                                            </li>
+                                            <li>
+                                                <strong>Lower overheads- </strong>
+                                                fewer servers and onsites management equals a better bottom line.
+                                            </li>
+                                            <li>
+                                                <strong>Worry-free IT- </strong>
+                                                our experts will proactively manage your systems so you never experience issuses.
+                                            </li>
+                                            <li>
+                                                <strong>Flexiblity- </strong>
+                                                any computer can run resource-intensive apps and multiple operating systems.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+
+                                function cloudFunction() {
+                                    var cloud_service = document.getElementById('cloud-service');
+                                    var cloud = document.getElementById('cloud');
+
+                                    if (cloud.style.display === 'none'){
+                                        cloud.style.display = 'block';
+                                        cloud_service.style.display = 'none';
+                                    }else{
+                                        cloud.style.display = 'none';
+                                        cloud_service.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                            
+                            
+                        </div>
+                        <div  class="column text-center" style="margin-bottom:2%; ">
+                            <div id='security-service' class="box has-shadow" style="display: block;">
+                                <a href="#security" onclick="securityFuncition()">
+                                    <i class="fa-solid fa-fingerprint"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Security Service</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Cyber attacks are more dangerous than ever, which is why you need multiple layers of protection. DST's Security Services safeguards 
+                                        your business against malware and extensive downtime. Our system detects and removes viruses and spyware that may have been 
+                                        inadvertently downloaded from the internet and can report where users spend time online.</p>
+                                    <a class="button is-primary is-rounded is-outlined" href="#security" onclick="securityFuncition()">
+                                        Show More
+                                    </a>
+                            </div>
+                            <div id="security" style="display: none;">
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#security-service" onclick="securityFuncition()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        In addition to protecting your systems, DST Tech Solution LLC also protects your employees with anti-phishing and web filtering software and your data with encryption systems and identity management tools.
+                                    </p>
+                                    <div class="content subtitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <ul>
+                                            <li>
+                                                <strong>Risk analysis- </strong>
+                                                a complete risj profile created by our security experts.
+                                            </li>
+                                            <li>
+                                                <strong>Data Policies- </strong>
+                                                designed to protect the integrity and confidentiality of your data.
+                                            </li>
+                                            <li>
+                                                <strong>Patch Management- </strong>
+                                                to fix the latest vulnerabilities.
+                                            </li>
+                                            <li>
+                                                <strong>Regular Reports- </strong>
+                                                monitor internet usage and track websites.
+                                            </li>
+                                            <li>
+                                                <strong>Perimeter security- </strong>
+                                                such as firewalls, intrusion prevention systems, and antivirus software.
+                                            </li>
+                                            <li>
+                                                <strong>Content filtering- </strong>
+                                                block harmful or unsafe sites to increase productivity.
+                                            </li>
+                                            <li>
+                                                <strong>WiFi and 4G services- </strong>
+                                                saftley use mobile devices throughout your office.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+
+                                function securityFuncition(){
+                                    var security_service = document.getElementById("security-service");
+                                    var security = document.getElementById('security');
+                                    if (security.style.display === 'none'){
+                                        security.style.display = 'block';
+                                        security_service.style.display = 'none';
+                                    }else{
+                                        security.style.display = 'none';
+                                        security_service.style.display = 'block';
+                                    }
+                                }
+
+                            </script>
+                            
+                            
+                        </div>
+                        <div  class="column text-center" style="margin-bottom: 2%;">
+                            <div id='business-service' class="box has-shadow" style="display: block;">
+                                <a href="#business" onclick="businessFunction()">
+                                    <i class="fa-solid fa-user-tie"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Business Continuity</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">DST's Cloud Backup for Veeam DST provides a fully integrated, fast, and encrypted disaster recovery solution for Veeam customers to
+                                         back up and restore from the cloud. It allows you to create a copy of your entire system offsite, without the cost and complexity of
+                                          managing an offsite infrastructure. We also provide business risk consulting services to help you plan for every conceivable 
+                                          catastrophe.</p>
+                                    <a class="button is-primary is-rounded is-outlined" href="#business" onclick="businessFunction()">
+                                    Show More
+                                    </a>
+                            </div>
+                            
+                                <div id="business" style="display: none;">
+                                    <div class="box has-shadow has-text-left has-background-info-light">
+                                        <a href="#business-service" onclick="businessFunction()">
+                                            <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                        </a>
+                                        <p class="subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                            One unfortunate outage can damage a company's reputation and drive down its profitability. To minimize the impact of disasters, you must have a comprehensive plan for recovering your apps and data quickly. DST's state-of-the-art data backup and disaster recovery solutions guarantee lightning-fast recovery times.
+                                        </p>
+                                        <div class="content subtitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                            <ul>
+                                                <li>
+                                                    Continuous replication of your servers into fault-tolerant cloud servers.
+                                                </li>
+                                                <li>
+                                                    Host-bases replication options for any virtual or physical environment.
+                                                </li>
+                                                <li>
+                                                    Pre-built virtual recovery environment.
+                                                </li>
+                                                <li>
+                                                    Integration with existing VPN and private networks.
+                                                </li>
+                                                <li>
+                                                    Full managed recovery.
+                                                </li>
+                                                <li>
+                                                    Routine disaster recovery testing and training.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+    
+                                    function businessFunction() {
+                                        var business_service = document.getElementById('business-service');
+                                        var business = document.getElementById('business');
+                                        if(business.style.display === 'none'){
+                                            business.style.display = 'block';
+                                            business_service.style.display = 'none';
+                                        }else {
+                                            business.style.display = 'none';
+                                            business_service.style.display = 'block';
+                                        }
+                                    }
+                                </script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--------Third Service Row------------------------------>
+            <div class="columns">
+                <div class="column">
+                    <div class="columns  is-desktop is-tablet ">
+                        <div  class="column text-center" style="margin-bottom: 2%;">
+                            <div id="consult-service" class="box has-shadow" style="display: block;">
+                                <a href="#consult" onclick="consultFunction()">
+                                    <i class="fa-solid fa-computer"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">IT Consulting</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">When it comes to the technology you need to run your business, it's hard to make sense of all the options. DST Tech Solution LLC does more than just sell technology - we combine IT and business expertise to develop strategies that align with your needs and goals.</p>
+                                <a class="button is-primary is-rounded is-outlined" href="#consult" onclick="consultFunction()">
+                                    Show More</a>
+                            </div>
+                            
+                            <div id="consult" style="display: none;">
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#consult-service" onclick="consultFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Our seasoned consultants catch potential problems that are lurking in your systems and processes, stopping them before they 
+                                        harm your company. In other words, our IT Consulting team can help you optimize costs, reduce risk, and produce a greater 
+                                        return on your investments.</p>
+                                    <div class="content subitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <ul>
+                                            <li>
+                                                <strong>customized Solutions- </strong>
+                                                based on current technology standards and best practices.
+                                            </li>
+                                            <li>
+                                                <strong>IT Assessments- </strong>
+                                                so we can better understand your business's pain points.
+                                            </li>
+                                            <li>
+                                                <strong>Industry Experties- </strong>
+                                                allows us to customize a solution that fits your business.
+                                            </li>
+                                            <li>
+                                                <strong>Full IT Services- </strong>
+                                                including planning, procurement, implementation, and ongoing management
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                function consultFunction() {
+                                    var consult_service = document.getElementById('consult-service');
+                                    var consult = document.getElementById('consult');
+                                    if(consult.style.display === 'none'){
+                                        consult.style.display = 'block';
+                                        consult_service.style.display = 'none';
+                                    }else{
+                                        consult.style.display = 'none';
+                                        consult_service.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div  class="column text-center" style="margin-bottom: 2%; ">
+                            <div id="helpdesk-service" class="box has-shadow" style="display:block;">
+                                <a href="#helpdesk" onclick="helpdeskFunction()">
+                                    <i class="fa-brands fa-hire-a-helper"></i></a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Help Desk Support</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">When your IT breaks down, you need to speak with a professional who knows how to fix it quickly and efficiently. DST Tech Solution 
+                                        LLC has experienced technicians on standby ready to give you prompt and personalized support.</p>
+                                <a class="button is-primary is-outlined is-rounded" href="#helpdesk" onclick="helpdeskFunction()">
+                                    Show More</a>
+                            </div>
+                            <div id="helpdesk" style="display: none;">
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#helpdesk-service" onclick="helpdeskFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <div class="conent subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <ul>
+                                            <li>
+                                                <strong>US-bases - </strong>
+                                                calls are handled by DST technicians working in a location near you.
+                                            </li>
+                                            <li>
+                                                <strong>Fast - </strong>
+                                                prompt response and turnaround times, guarantee.
+                                            </li>
+                                            <li>
+                                                <strong>Robust - </strong>
+                                                we are experienced in a range of IT solutions
+                                            </li>
+                                            <li>
+                                                <strong>Friendly - </strong>
+                                                customer satisfaction is important to us.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <script>
+                                function helpdeskFunction() {
+                                    var helpdesk_service = document.getElementById('helpdesk-service');
+                                    var helpdesk = document.getElementById('helpdesk');
+                                    if(helpdesk.style.display === 'none'){
+                                        helpdesk.style.display = 'block';
+                                        helpdesk_service.style.display = 'none';
+                                    }else{
+                                        helpdesk.style.display = 'none';
+                                        helpdesk_service.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                            
+                        </div>
+                        <div  class="column text-center" >
+                            <div id="managed-service" class="box has-shadow" style="display: block;">
+                                <a href="#managed" onclick="managedFunction()">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </a>
+                                    <p class="title is-size-4-desktop is-size-5-mobile" style="font-family: 'Poppins';">Managed Service</p>
+                                    <p class="subtitle has-text-left is-size-4-desktop is-size-5-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Your organization's core mission is critical, but the technology that supports it may not be up to the challenge. That's where DST
+                                        Tech Solution LLC can help. Unlike traditional break/fix computer support companies, which depend on your problems to stay in business,
+                                        we provide comprehensive Managed Services so you can spend less time on IT and more time running your business.</p>
+                                
+                                <a class="button is-primary is-rounded is-outlined" href="#managed" onclick="managedFunction()">
+                                Show More
+                                </a>
+                            </div>
+                            <div id="managed" style="display: none;">
+                                <div class="box has-shadow has-text-left has-background-info-light">
+                                    <a href="#managed-service" onclick="managedFunction()">
+                                        <i class="fa-solid fa-xmark fa-1x" style="color: black;"></i>
+                                    </a>
+                                    <p class="subtitle is-size-4-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        For a fixed monthly subscription fee, you get access to technicians who will handle all your IT deployments and updates. We also proactively monitor your systems and resolve issues before you find out about them, saving you from expensive downtime events and computer repair bills.
+                                    </p>
+                                    <div class="content subtitle is-size-5-desktop is-size-6-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+                                        <ul>
+                                            <li>
+                                                <strong>Installation and Updates - </strong>
+                                                performed quickly and seamlessly.
+                                            </li>
+                                            <li>
+                                                <strong>Onsite Support - </strong>
+                                                of issues that can't simply be resolved over the phone.
+                                            </li>
+                                            <li>
+                                                <strong>IT Reports - </strong>
+                                                on the health of your networks, computers, and software.
+                                            </li>
+                                            <li>
+                                                 <strong>predictable fees - </strong>
+                                                 since we follow a flat-rate, pay-as-you-go subcription model.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+
+                                function managedFunction(){
+                                    var managed_service = document.getElementById('managed-service');
+                                    var managed = document.getElementById('managed');
+                                    if (managed.style.display === 'none'){
+                                        managed.style.display = 'block';
+                                        managed_service.style.display = 'none';
+                                    }else{
+                                        managed.style.display = 'none';
+                                        managed_service.style.display = 'block';
+                                    }
+                                }
+                            </script>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div><!--End container fluid-->
+    </div><!--End hero body-->
+</section><!--End service section-->
+
+<!--Industries Page-------------------------------------------->
+<!--==========================================================-->
+<section class="hero" style="background-color: rgb(245, 235, 216);">
+    <div class="hero-body">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile" style="font-family: 'Playfair Display', serif;color: rgb(0, 0, 104);">Industries | Business Drivers</h1>
+                <br>
+                <h5 class="subtitle is-size-3-desktop is-size-4-mobile" style="font-family: 'Poppins'">We server all types of organizations</h5>
+                <p class="subtitle is-size-4-desktop is-size-4-tablet is-size-5-mobile" >Unique solutions for every industry; No matter the industry,
+                    DST gives companies cutting-edge solutions they can relay on. 
+                    Find out what your business needs to grow today.
+                <p>
+                <!--Tabs----------------->
+                <div class="columns is-desktop is-tablet">
+                    <div class="column is-one-third">
+                        <!--Tabs-->
+                                <ul class="list-group list-group-flush nav nav-pills flex-sm-column is-size-5-desktop is-size-6-mobile" role="tablist" style="font-family: 'Roboto Condensed', sans-serif;">
+                                    <li class="list-group-item nav-item">
+                                        <a class="nav-link active " data-toggle="pill" href="#home"><strong>SMB-Business</strong></a>
+                                    </li>
+                                    <li class="list-group-item nav-item"><a class="nav-link" data-toggle="pill" href="#menu1"><strong>Public Sector</strong></a></li>
+                                    <li class="list-group-item nav-item" ><a class="nav-link" data-toggle="pill" href="#menu2"><strong>Education</strong></a></li>
+                                    <li class="list-group-item nav-item"><a class="nav-link" data-toggle="pill" href="#menu3"><strong>Retail</strong></a></li>
+                                    <li class="list-group-item dropdown nav-item">
+                                        <a class="btn dropdown-toggle nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" id="dropdownMenuLink" aria-expanded="false">
+                                            <strong>more</strong>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <div class="dropdown-menu is-size-5-desktop is-size-6-mobile" aria-labelledby="dropdownMenu">
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu4">Banking</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu5">Healthcare</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu6">Insurance</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu7">Entertainment</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu8">The Optimized Wireless Business</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu9">The Optimized Business Cloud</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu10">Mobility in Business</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu11">Small-Business Assessment</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu12">Analytics, Data Management & Data Warehousing</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu13">Asset Management</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu14">Product Lifecycle Management</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu15">E-Commerce</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="pill" href="#menu16">Digital Product</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade show active">
+                                <i class="fa-solid fa-store fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">SMB-Business</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">Hassel-free IT and Enterprise resources for a pay-as-you-go 
+                                    fee enable you to minimize cost and get an edge on the competition
+                                </p>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <i class="fa-solid fa-people-group fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Public Sector</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', san-serif;font-weight: 500;">
+                                Strategic planning, network sercurity, and managed services allow you to 
+                                serve your community better.
+                                </p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <i class="fa-solid fa-school fa-4x" style="color:rgb(235, 172, 0);"></i>
+                                <h1 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Education</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                If you want your institution to get ahead, we have the technologies you need to get there. 
+                                We can optimize your IT infrastructure and deplpy and array of apps for faculty and students.
+                                </p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade" >
+                                <i class="fa-solid fa-basket-shopping fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Retail</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                DST technologies can identify sales patterns and provide a personalized brand experience that creates 
+                                loyal customers 
+                                </p>
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                                <i class="fa-solid fa-piggy-bank fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Banking</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Respond swiftly to market changes, deliver products quicker, increase profits, lower operational cost and more.
+                                </p>
+                            </div>
+                            <div id="menu5" class="tab-pane fade">
+                                <i class="fa-solid fa-stethoscope fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="Font-family: 'Roboto Condensed', sans-serif;">Healthcare</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Our proactive managed services eliminate issuse quickly so you can focus on caring for you patients.
+                                </p>
+                            </div>
+                            <div id="menu6" class="tab-pane fade">
+                                <i class="fa-solid fa-note-sticky fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Insurance</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                We deliver advanced technology that streamlines you operations and gives you a better return 
+                                on your investment.
+                                </p>
+                            </div>
+                            <div id="menu7" class="tab-pane fade">
+                                <i class="fa-solid fa-ticket-simple fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Entertainment</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Located near the heart of the world's film and television industry, DST fully understands 
+                                entertainment businesses' IT needs.
+                                </p>
+                            </div>
+                            <div id="menu8" class="tab-pane fade">
+                                <i class="fa-solid fa-wifi fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">The Optimized Wireless Business</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                With DST Tech Solution LLC's wireless technology, you and your employees can work from virtually any location.
+                                </p>
+                            </div>
+                            <div id="menu9" class="tab-pane fade">
+                                <i class="fa-solid fa-cloud-arrow-up fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">The Optimized Business Cloud</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Overcome every business challenges with a multi-layered cloud infrastructure.
+                                </p>
+                            </div>
+                            <div id="menu10" class="tab-pane fade">
+                                <i class="fa-solid fa-mobile-screen-button fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Mobility in Business</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                The best devices, data plans, and support services all for a predictable, per-user, per-month fee.
+                                </p>
+                            </div>
+                            <div id="menu11" class="tab-pane fade">
+                                <i class="fa-solid fa-chart-line fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Small-Business Assessment</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Our seasoned consultants know when it's time to scale up your business.
+                                </p>
+                            </div>
+                            <div id="menu12" class="tab-pane fade">
+                                <i class="fa-solid fa-chart-line fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Analytics, Data Management & Data Warehousing</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                We protect the lifeblood of your company and help you produce actionable insights.
+                                </p>
+                            </div>
+                            <div id="menu13" class="tab-pane fade">
+                                <i class="fa-solid fa-user-secret fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Asset Management</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Your devices, data, and other key assets, monitoring and sercured by professional 24/7.
+                                </p>
+                            </div>
+                            <div id="menu14" class="tab-pane fade">
+                                <i class="fa-solid fa-arrows-spin fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Product Lifecycle Management</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Meeting with our business specialist will speed up your time to market.
+                                </p>
+                            </div>
+                            <div id="menu15" class="tab-pane fade">
+                                <i class="fa-solid fa-bag-shopping fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">E-Commerce</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                Sell your unique products, your way, in your very own online store.
+                                </p>
+                            </div>
+                            <div id="menu16" class="tab-pane fade">
+                                <i class="fa-solid fa-code fa-4x" style="color: rgb(235, 172, 0);"></i>
+                                <h1  class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Digital Products</h1>
+                                <p class="subtitle is-size-4-desktop is-size-5-tablet is-size-6-mobile" style="font-family: 'Montserrat', sans-serif;font-weight: 500;">
+                                If you need customized solutions for specific problems, our engineers can develop software just for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Friendly Help Desk Section -->
+<!--===============================================================================-->
+<section id="section3" class="hero " style="background-color: #0e1142;">
+    <div class="">
+        <div class="hero-body"><!--Start hero-body-->
+            <div class="container-fluid">
+                <div class='columns is-gapless is-desktop is-tablet  is-centered'> <!--First column row-->
+                    <!--First Column-->
+
+                    
+                    <div id="leftColumn" class="container" style="margin-left: 5px;margin-right: 5px;padding-top: 10%; background-color: #0e1142;">
+                        
+                        <div class="column is-narrow has-text-center fourth-section">
+                                <div class="text-center">
+                                    <img src="images/Component-5-1.svg" alt="it service, computer services" style="margin-top: -20%;">
+                                    <h1 class="title has-text-white has-text-centered is-size-3-mobile " style="font-family: 'Roboto Condensed', sans-serif;">Maintenance</h1>
+                                    <br>
+                                    <p class="subtitle has-text-white is-size-5-desktop is-size-5-tablet is-size-5-mobile has-text-left">We handle all updates, antivirus, security, and monitoring for you. You’ll know your systems are healthy every single day</p>
+                                </div>
+                        </div>
+                    </div><!--End First Column-->
+                    <div class="vl"></div>
+                    <!--Second Column-->
+                    <div id="centerColumn" class="container " style="margin-left:5px; margin-right: 5px;padding-top:10%;background-color: #0e1142;">
+                        <div class="column is-narrow has-text-center fourth-section">
+                                <div class="text-center">
+                                    <img class="img-fluid has-text-center" src="images/Component-7-1.svg" alt="Helpdesk & Support" style="margin-top: -20%;">
+                                    <h1 class="title has-text-white has-text-center is-size-3-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Helpdesk & Support</h1>
+                                    <br>
+                                    <p class="subtitle has-text-white is-size-5-desktop is-size-5-tablet is-size-5-mobile has-text-left">Our technicians assist your users via phone, remote session, or office visits. Access quality tech support quickly.</p>
+                                </div>
+                        </div>
+                    </div><!--End Second column-->
+                    <div class="vl"></div>
+                    <!--Third Column-->
+                    <div id="rightColumn" class="container" style="margin-left:5px; margin-right:5px;padding-top: 10%;background-color: #0e1142;">
+                        <div class="column is-narrow has-text-center ">
+                                <div class="text-center">
+                                    <img  src="images/Component-6-1.svg" alt="Consulting" style="margin-top: -20%;">
+                                    <h1 class="title has-text-white has-text-center is-size-3-mobile" style="font-family: 'Roboto Condensed', sans-serif;">Consulting</h1>
+                                    <br>
+                                <p class="subtitle has-text-white is-size-5-desktop is-size-5-tablet is-size-5-mobile has-text-left">We maintain detailed documentation and analysis of your systems, and meet with you to keep you up to date.</p>
+                                </div>
+                        </div>
+                    </div><!--End Third column-->
+                </div> <!--End first columns row-->
+
+            </div>
+
+                
+        </div><!--End hero body-->
+    </div>    
+</section><!--End third hero class -->
+
+
+
+
+<!--==========================================================-->
+<section id="section4" class="hero" >
+    <div class="hero-body">
+        <div class="container-fluid text-center">
+            <div class="columns is-desktop is-mobile is-tablet  is-centered"><!-- Header row -->
+                <div class="column ">
+                        <h1 class="title is-1 is-size-1-desktop is-size-2-tablet is-size-2-mobile" style="font-family: 'Poppins';">Let us together build a flourishing business</h1>
+                
+                </div>
+            </div>
+            <div class="columns is is-multiline is-desktop is-centered">
+
+                <div class="column" >
+                    <div class="container">
+                            <img src="images/group.png" alt="friendly help desk">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="container">
+                        <div class="custom-helpdesk">
+                        <h1 class="is-size-3-desktop is-size-3-tablet is-size-3-mobile has-text-left" style="font-family: 'Roboto Condensed', sans-serif;">Our full time help desk team is at your service when you 
+                            need them most. We offer remote assistance and online 
+                            resources such as our advanced ticketing system and 
+                            customer knowledge base.</h1>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Get in touch with us ----------->
+<!--===========================================================================-->
+
+<section class="hero" style="background: #0e1142">
+    <div class="hero-body">
+        <div class="columns is-desktop is-centered">
+            <div class="column has-text-centered">
+                <h3 class="title has-text-white is-size-1-desktop" style="font-family:'Playfair Display', serif">Get in touch with us</h3>
+                <p class="subtitle has-text-grey" >We will help you explore how our services can benefit your business</p>
+            </div>
+
+            <div class="column is-half text-center is-centered">
+                <a class="button is-warning is-centered " href="support.html" style="font-family: 'Poppins'; margin-top: 5%;">LET'S CONNECT</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer------------------------------------------------------------------------->
+<!--==============================================================================-->
+<footer class="footer">
+    <div class="content has-text-centered">
+        
+        <img src="css/images/subfolder/main_logo.png" class="img-responsive logo" width="270px" height="64px" alt="DST Tech Solutions">
+        <p><span>&COPY;</span>2022 DST TECH SOLUTIONS</p>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        
+
+        function openIndustry(event, industry ){
+            // Declare all variables
+            var i , tabcontent, tablinks;
+
+            // Get all elements with class="tabconent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i=0; i < tabcontent.length; i++){
+                tabcontent[i].style.display = 'none';
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i=0; i < tablinks; i++){
+                tablinks[i].className = tablinks[i].className.replace('active', "");
+            }
+
+            // Show the current tab, and add and "active" class to the link that opened the tab
+            document.getElementById(industry).style.display = "block";
+            event.currentTarget.className += "active";
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,453 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | DTS Tech Solutions</title>
+    <!--link to favicon icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+      <!--link to static css-->
+    <link rel="stylesheet" href="{% static 'app/css/index.css' %}">
+      <!-- Link to bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- Link to Bulma IO css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+      
+      <!-- Links to font awesome -->
+    <script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
+
+      <!--link to W3 Schools css for animated text-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYL7PFZ4V5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYL7PFZ4V5');
+</script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light is-size-4-desktop is-size-4-tablet is-size-4-mobile" style="font-family: 'League Gothic';">
+    <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'app/css/images/subfolder/main_logo.png' %}" class="img-responsive logo" width="375px" height="80px" alt="DST Tech Solutions">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-4 ">
+          <a class="nav-link" href="{% url 'index' %}">About</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+        </li>
+        <li class="nav-item active px-4">
+            <a class="nav-link" href="{% url 'career' %}">Careers<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#wifiservice">Optimized WiFi</a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#comm-service">
+                    Unified Communications
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#network-service">
+                    Network Solutions
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#cloud-service">
+                    Cloud / Virtualization
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#security-service">
+                    Security Service
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#business-service">
+                    Business Continuity
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#consult-service">
+                    IT Consulting
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#helpdesk-service">
+                    Help Desk Support
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#managed-service">
+                    Managed Service
+                </a>
+            </div>
+            
+        </li>
+      </ul>
+    </div>
+  </nav>
+      <!--End Nav bar-->
+<!--Main Section------------------------------------------------>
+<!--==========================================================-->
+<section class="hero  parallax">
+  <div class="hero-body bg-career">
+    <div class="bg-career2">
+    <div class="container">
+      <div class="columns  is-desktop is-tablet ">
+        <div class="column" >
+          <h1 class="title has-text-white is-size-2-mobile" style="font-family: 'Roboto Condensed', sans-serif; font-size: 64px;">JOIN OUR TEAM</h1>
+          
+          <div class="columns  is-tablet is-mobile ">
+            <div class="column" >
+              <p class="subtitle has-text-left is-size-4-desktop is-size-4-tablet has-text-white" style="font-family: 'Roboto Condensed', sans-serif; line-height: 2;">
+                We seek collaborators who are motivated and passionate 
+                about their work and desire the freedom to grow, learn 
+                and contribute to the success of our customers.
+              </p>
+              <br><br>
+              
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="vl">
+
+        </div>
+        <div class="column ">
+          <div class="career-column">
+            <p class="subtitle has-text-left has-text-white is-size-4-desktop is-size-4-tablet"
+           style="font-family: 'Roboto Condensed', sans-serif;
+            line-height: 2;  ">
+            We are always looking for talented, dedicated individuals to help us
+            provide the best service and support to meet the mission.
+          </p>
+          </div>
+          
+        </div>
+    </div>
+
+    <div class="columns is-mobile">
+      <div class="column is-half current-button">
+        <a class="button is-medium has-text-info" style="font-family: 'Poppins';"  href="#openings">CURRENT OPENINGS</a>
+      </div>
+    </div>
+  </div>  
+  </div>
+  </div>
+</section>
+
+<!--Current Openings---------------------------------------------------------------------->
+<!--====================================================================================-->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container" style="width: 85%; margin-top: 5px;">
+      <div id="openings" class="columns is-mobile" >
+        <div class="column">
+          <h1 class="title is-size-2-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248); letter-spacing: 0em;">CURRENT OPENINGS</h1>
+          <p class="subtitle is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif;">Interested in a new & fulfilling career that supports our mission? Apply today.</p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: rgb(230, 230, 230);">
+            
+            <div class="columns is-desktop is-tablet" >
+              <div class="column">
+                <h3 class="title is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248);">Installation Technician</h3>
+
+                <a href="#firtOpening" class="button is-small is-info  is-outlined" onclick="firstFunction()">
+                  Responsibilities
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                
+              </div>
+              <div class="column text-center">
+                <i class="fa-solid fa-location-dot" style="color: rgb(078, 170, 248);"></i>
+                <p class="subtitle is-size-6-desktop" style="font-family: 'Roboto Condensed', sans-serif;">Location</p>
+              </div>
+              <div class="column text-center">
+                <a class="button is-info is-outlined" href="{% url 'apply' %}" >APPLY</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="firtOpening" style="display: none;"  >
+            <div class=" box  content" >
+              <ul>
+                <li>Must have a good working knowledge of Windows 10 in a business/enterprise enviroment</li>
+                    <li>
+                        Experienced with installation and configuration of peripheral deviecs, installation of drivers for hardware
+                    </li>
+                    <li>
+                        Good troubleshooting skills to resolve or remediate hardware & software error’s or connectivity issues.
+                    </li>
+                    <li>
+                        Experience with Windows 7 to Windows 10 Migration’s
+                    </li>
+                    <li>
+                        Working knowledge of networking and basic network admin skill’s, join a computer to a domain, DNS resolution, etc.
+                    </li>
+                    <li>
+                        Understanding of assigning an IP address to a computer or printer, MAC address, etc
+                    </li>
+                    <li>
+                        Ability to physically setup new computers and peripheral  devices in a business oriented environment.
+                    </li>
+              </ul>
+            </div>
+          </div>
+
+          <script>
+              function firstFunction() {
+                var opening = document.getElementById('firtOpening');
+                if(opening.style.display === 'block'){
+                  opening.style.display = 'none';
+                }else{
+                  opening.style.display = 'block';
+                }
+              }
+          </script>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: rgb(230, 230, 230);">
+            <div class="columns">
+              <div class="column">
+                <h3 class="title is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248);">Senior Technical Project Manager</h3>
+                <a href="#secondOpening" class="button is-small is-info  is-outlined" onclick="secondFunction()">
+                  Responsibilities
+                  <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+              <div class="column text-center">
+                <i class="fa-solid fa-location-dot" style="color: rgb(078, 170, 248);"></i>
+                <p class="subtitle is-size-6-desktop" style="font-family: 'Roboto Condensed', sans-serif;" >Location</p>
+              </div>
+              <div class="column text-center">
+                <a class="button is-info is-outlined" href="{% url 'apply' %}">APPLY</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="secondOpening" style="display:none;">
+            <div class="box content">
+              <ul>
+                <li>
+                    Technical Project Manager to start helping coordination and organizing projects for the network team.
+                </li>
+                <li>
+                    Experience and expertise with Corporate Network Enviroments.
+                </li>
+                <li>
+                    Experience with Cisco, HPE, Check Point equipment.
+                </li>
+                <li>
+                    The TPM needs to have a strong knowledge of construction pertaining to networks and Understanding
+                     of network deployments and Data Center deployment's.
+                </li>
+                <li>The TPM will also be resposible to create and build policies and SOP's for network team deployment.</li>
+            </ul>
+            </div>
+          </div>
+
+          <script>
+            function secondFunction() {
+              var secondOpening = document.getElementById('secondOpening');
+              if(secondOpening.style.display === 'block'){
+                secondOpening.style.display = 'none';
+
+              }else{
+                secondOpening.style.display = 'block';
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box " style="background-color: rgb(230, 230, 230);">
+            <div class="columns">
+              <div class="column">
+                <h3 class="title is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248);">Tech Center Administrator</h3>
+                <a href="#thirdOpening" class="button is-small is-info  is-outlined" onclick="thirdFunction()">
+                  Responsibilities
+                  <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+              <div class="column text-center">
+                <i class="fa-solid fa-location-dot" style="color: rgb(078, 170, 248);"></i>
+                <p class="subtitle is-size-6-desktop" style="font-family: 'Roboto Condensed', sans-serif;" >Location</p>
+              </div>
+              <div class="column text-center">
+                <a class="button is-info is-outlined" href="{% url 'apply' %}">APPLY</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Hidded Div------------------->
+          <div id="thirdOpening" style="display: none;">
+            <div class="box content">
+              <ul>
+                <li>
+                    Working knowledge of network and basic networks admin skill's, join a computer to a domain, 
+                    DNS resolution, etc..
+                </li>
+                <li>
+                    Understanding of assigning an IP address to a computer or printer, MAC address, etc.
+                </li>
+                <li>
+                    Ablitiy to assit with changing IP Schema, Active Directory moves and changes, etc..
+                </li>
+                <li>
+                    Working with password rests, login credential issues, system lockouts.
+                </li>
+                <li>
+                    Experince and exposure using SCCM to reimage a system, push applications, etc..
+                </li>
+                <li>
+                    Knowledge of ticketing system, Service Now a plus.
+                </li>
+                <li>
+                    Experince with Health Care enivorments a plus.
+                </li>
+               </ul>
+            </div>
+          </div>
+
+          <script>
+            function thirdFunction() {
+              var thirdOpening = document.getElementById('thirdOpening');
+              if (thirdOpening.style.display === 'block'){
+                thirdOpening.style.display = 'none';
+              }else{
+                thirdOpening.style.display = 'block';
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: rgb(230, 230, 230);">
+            <div class="columns">
+              <div class="column">
+                <h3 class="title is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248);">Senior Technical Services Manager</h3>
+                <a href="#fourthOpening" class="button is-small is-info  is-outlined" onclick="fourthOpening()">
+                  Responsibilities
+                  <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+              <div class="column text-center">
+                <i class="fa-solid fa-location-dot" style="color: rgb(078, 170, 248);"></i>
+                <p class="subtitle is-size-6-desktop" style="font-family: 'Roboto Condensed', sans-serif;">Location</p>
+              </div>
+              <div class="column text-center">
+                <a class="button is-info is-outlined" href="{% url 'apply' %}">APPLY</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Hidden Div----------->
+          <div id="fourthOpening" style="display: none;">
+            <div class="box content">
+              <ul>
+                <li>
+                    Senior Techincal Resource with hands on experience in managing a Techincal Support Team, 
+                    primarily in a corprate enviroment.
+                </li>
+                <li>
+                    Health Care Experience a plus.
+                </li>
+                <li>
+                    Experience with Managing and maintain an Enterprise Call Center-Help Desk Enviroment.
+                </li>
+               </ul>
+            </div>
+          </div>
+
+          <script>
+
+            function fourthOpening() {
+              var opening = document.getElementById('fourthOpening');
+              if(opening.style.display === 'block'){
+                opening.style.display = 'none';
+              }else{
+                opening.style.display = 'block';
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: rgb(230, 230, 230);">
+            <div class="columns">
+              <div class="column">
+                <h3 class="title is-size-4-desktop" style="font-family: 'Roboto Condensed', sans-serif; color: rgb(078, 170, 248);">System Engineer-Microsoft 365 Specialist</h3>
+                <a href="#fifthOpening" class="button is-small is-info  is-outlined" onclick="lastOpening()">
+                  Responsibilities
+                  <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+              <div class="column text-center">
+                <i class="fa-solid fa-location-dot" style="color: rgb(078, 170, 248);"></i>
+                <p class="subtitle is-size-6-desktop" style="font-family: 'Roboto Condensed', sans-serif;">Location</p>
+              </div>
+              <div class="column text-center">
+                <a class="button is-info is-outlined" href="{% url 'apply' %}">APPLY</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Hidden Div--------------------------->
+          <div id="fifthOpening" style="display:none;">
+            <div class="box content">
+              <ul>
+                <li>
+                    Senior Technical Resource with expertise in implementation and supporting Microsoft 365 in a Corporate Environmen
+                </li>
+                <li>
+                    2 to 4 years of hands on experience of implementation and support of network infrastructure.
+                </li>
+                <li>
+                    Experience with Health Care environments a plus.
+                </li>
+               </ul>
+            </div>
+          </div>
+          <script>
+            function lastOpening(){
+              opening = document.getElementById('fifthOpening');
+              if(opening.style.display === 'block'){
+                opening.style.display = 'none';
+              }else{
+                opening.style.display = 'block';
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <img src="css/images/subfolder/main_logo.png" class="img-responsive logo" width="270px" height="64px" alt="DST Tech Solutions">
+    <p><span>&COPY;</span>2022 DST TECH SOLUTIONS</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

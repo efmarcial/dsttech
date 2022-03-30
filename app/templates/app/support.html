@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custumer Support</title>
+      <!--link to favicon icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+        <!--link to static css-->
+        <link rel="stylesheet" href="{% static 'app/css/index.css' %}">
+        <!-- Link to bootstrap css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Link to Bulma IO css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        
+        <!-- Links to font awesome -->
+        <script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYL7PFZ4V5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYL7PFZ4V5');
+</script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light is-size-4-desktop is-size-4-tablet is-size-4-mobile" style="font-family: 'League Gothic';">
+    <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'app/css/images/subfolder/main_logo.png' %}" class="img-responsive logo" width="375px" height="80px" alt="DST Tech Solutions">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-4">
+          <a class="nav-link" href="{% url 'index' %}">About</span></a>
+        </li>
+        <li class="nav-item px-4 active">
+          <a class="nav-link" href="{% url 'contact' %}">Contact<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-4">
+            <a class="nav-link" href="{% url 'career' %}">Careers</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#wifiservice">Optimized WiFi</a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#comm-service">
+                    Unified Communications
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#network-service">
+                    Network Solutions
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#cloud-service">
+                    Cloud / Virtualization
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#security-service">
+                    Security Service
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#business-service">
+                    Business Continuity
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#consult-service">
+                    IT Consulting
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#helpdesk-service">
+                    Help Desk Support
+                </a>
+                <a class="dropdown-item is-size-4-desktop is-size-4-tablet is-size-4-mobile" href="index.html#managed-service">
+                    Managed Service
+                </a>
+            </div>
+            
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <!--End Nav bar-->
+
+    <section class="hero parallax">
+      <div class="hero-body bg-career">
+    <div class="columns">
+      <div class="column"><!--first column-->
+        <div class="container">
+          <h1 class="title has-text-white is-size-1-desktop is-size-1-tablet is-size-2-mobile" style="font-family: 'Roboto Condensed', sans-serif;">
+            We are here to help!
+          </h1>
+          <p class="subtitle has-text-white">
+            Send Us a Message and Follow us 
+          </p>
+
+          <ul class="subtitle has-text-white">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              6241 N rockwell st, Chicago 600659 Illinois</li>
+            <br>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              +1 (978) 930-4410</li>
+            <br>
+            <li>
+              <a role="button" href="https://www.linkedin.com/in/dst-tech-solutions-llc-912b04231/">
+                <i class="fa-brands fa-linkedin fa-3x" style="color: rgb(37,200 , 250);"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column"><!--Second column-->
+          <!--Start Form-->
+        <form  method="POST" action="form.php" id="contact-form">
+          <div class="field is-horizontal ">
+            <div class="field-label is-normal">
+              <label class="label has-text-white">From</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="text" placeholder="Name" name="name" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                  <input class="input " type="email" name="email" placeholder="Email" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field is-horizontal"> <!--Phone number input-->
+            <div class="field-label"></div>
+            <div class="field-body">
+              <div class="field is-expanded">
+                <div class="field has-addons">
+                  <p class="control is-expanded">
+                    <input class="input" type="tel" name="number" placeholder="Your phone number" required>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label has-text-white">Subject</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input " name="subject" type="text" placeholder="e.g. Partnership opportunity" required>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label has-text-white">Question</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" name="message" placeholder="Explain how we can help you" required></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <!-- Left empty for spacing -->
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button class="button is-warning " type="submit">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> <!--End Form-->
+        </form>
+      </div><!--End second column-->
+    </div>
+    </div>
+    </section>
+
+    <div id="map"></div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+          
+          <img src="css/images/subfolder/main_logo.png" class="img-responsive logo" width="270px" height="64px" alt="DST Tech Solutions">
+          <p><span>&COPY;</span>2022 DST TECH SOLUTIONS</p>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+   <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl4Mprq-JDCK7X5RWyNVxsy306vw5AyxU&callback=initMap&v=weekly"
+   async
+ ></script>
+ <script>
+   // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  //41.995472694246736, -87.69438796114459
+  const uluru = { lat: 41.995472694246736, lng: -87.69438796114459 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+ </script>
+
+</body>
+</html>

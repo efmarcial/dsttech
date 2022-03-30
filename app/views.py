@@ -4,4 +4,14 @@ from django.http import HttpResponse
 
 
 def index(request):
-	return HttpResponse("Hello, world")
+	return render(request, 'app/index.html')
+
+
+def contact(request):
+	return render(request, 'app/support.html')
+
+def career(request):
+	return render(request, 'app/career.html')
+
+def apply(request):
+	return render(request, 'app/apply.html')
