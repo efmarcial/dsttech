@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://use.typekit.net/jdr2npf.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/eurostile-extended');
+@import url('https://fonts.cdnfonts.com/css/eurostile-mn');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}
+.custom-font {
+  font-family: 'kepler';
+  font-weight: 400;
+  font-display: bold;
+}
+
+.custom-helpdesk{
+  margin-top: 20%;
+}
+@media screen and (max-width: 721px) and (min-width: 200px){
+  .custom-helpdesk {
+    margin-top: 0%;
+  }
+}
+
+.center {
+  padding-left:10px ;
+  padding-right: 10px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.mission-statement {
+  line-height: 40px;
+}
+
+@media screen and (max-width: 973px){
+    .left-column {
+      margin-bottom: 34px;
+    }
+}
+@media screen and (max-width: 558px){
+  .left-column {
+    margin-bottom: 24px;
+  }
+}
+.mission-img {
+  background-image: url('images/subfolder/mission1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position:center;
+  height: 500px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+  .mission-statement {
+    line-height: 30px;
+  }
+  .mission-img {
+    width: 100%;
+    height: 460px;
+  }
+
+  .center {
+    padding-top: 12%;
+  }
+
+  .fourth-section {
+    margin-bottom: 8%;
+  }
+}
+.bg {
+    /* The image used */
+    background-image: url("images/subfolder/background-5.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+.custom-column {
+  background-color: rgba(0, 26, 141, 0.445);
+  border: 1px solid rgba(0, 25, 46, 0.39);
+  visibility: visible;
+}
+
+.custom-column:hover {
+  background-color: rgba(105, 105, 105, 0.5);
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 720px) and (min-width: 200px) {
+  .logo {
+    width: 200px; 
+    height: 30px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 720px) and (min-width: 200px) {
+.custom-column {
+  background-color: rgba(0, 26, 141, 0.445);
+  visibility: visible;
+}
+  .custom-hr {
+    width: 5%;
+  }
+}
+.custom-container {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  color: white;
+  position: absolute;
+  bottom: 400px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/**Bootstrap icon colors**/
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+  margin-bottom: -40px;
+}
+@media screen and (max-width: 720px) and (min-width: 200px){
+  .carousel-indicators {
+   margin-bottom: -75px;
+  }
+}
+
+@media screen and (max-width: 1980px) and (min-width:1023px) {
+  .career-column {
+    margin-top: 105px;
+  }
+}
+
+@media screen and (max-width:1023px) and (min-width: 200px){
+  .career-column {
+    margin-top: -60px;
+  }
+}
+
+.parallax { 
+
+  /* The image used */
+  background-image: url('images/subfolder/background2.jpg');
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media screen and (min-width: 480px) {
+  .service-parallax { 
+
+    /* The image used */
+    background-image: url('images/subfolder/software-developer-background.jpg');
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .service-parallax { 
+
+    background-color: rgb(0, 46, 131);
+  }
+  
+  
+}
+/*
+.bg-service {
+  background-color: rgba(0, 0, 0, 0.3);
+}*/
+.bg-career {
+  /* background-color: rgba(078, 170, 248, 0.8); */
+  background-image: linear-gradient(to right, rgba(18, 78, 131, 0.9) , rgba(078, 170, 248, 0.8));
+}
+
+
+.career-line {
+  line-height: 200%;
+}
+
+
+
+@media screen and (max-width:1025px) and (min-width:480px){
+  .current-button {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width:200px){
+.current-button {
+  margin-left: 15%;
+}
+}
+
+
+.custom-color {
+  background-color: rgb(219, 219, 219);
+}
+
+.fa-wifi, .fa-tower-cell, .fa-network-wired, 
+.fa-cloud, .fa-fingerprint, .fa-user-tie, 
+.fa-computer, .fa-hire-a-helper, .fa-phone-volume{
+  color: rgb(37, 200, 250);
+  font-size: 3em;
+}
+
+.fa-wifi:hover, .fa-tower-cell:hover, .fa-network-wired:hover, 
+.fa-cloud:hover, .fa-fingerprint:hover, .fa-user-tie:hover, 
+.fa-computer:hover, .fa-hire-a-helper:hover, .fa-phone-volume:hover, .fa-user-secret:hover, .fa-microchip:hover{
+  color: rgb(155, 227, 245);
+  font-size: 4em;
+}
+
+.fa-facebook, .fa-google {
+  font-size: 3em;
+  margin-right: 3%;
+}
+
+.fa-facebook:hover, .fa-google:hover {
+  font-size: 4em;
+}
+
+.fa-linkedin:hover {
+  color: aquamarine!important;
+}
+
+/**Google Maps **/
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+@media screen and (min-width:1025px){
+  .vl {
+    margin-left: 1%;
+    border-left: 2px solid lightblue;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width:1025px){
+  .vl2 {
+    margin-left: 1%;
+    border-left: 2px solid lightblue;
+    height: 385px;
+  }
+}
+
+.tab-pane {
+  margin-top: 5%;
+}
+
+.carousel-control-prev {
+  margin-left: -125px;
+}
+
+.carousel-control-next {
+  margin-right: -125px;
+}
+@media  screen and (max-width:720px) and (min-width:200px) {
+
+  .carousel-control-prev {
+    margin-left: -55px;
+    font-size: .6em;
+  }
+
+  .carousel-control-next {
+    margin-right: -55px;
+    font-size: .6em;
+  } 
+  
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   fill: yellow;
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+ .list-group-item {
+  background-color: #ffe592!important;
+ }
+
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: rgb(139, 139, 139)!important;
+  background-color: #f7d439!important;
+}
+
+.navbar .nav-link:hover{
+  color: #f7d439!important;
+} 
+
+.has-shadow {
+  border: .5px solid;
+  border-bottom-color: rgb(219,200,224);
+  border-top-color:rgb(219,200,224) ;
+  border-left-color: rgb(219,200,224);
+  border-right-color: rgb(219,200,224);
+  box-shadow: 8px 8px rgba(32, 33, 37,0.1)!important;
+}
